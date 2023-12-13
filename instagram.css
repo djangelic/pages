@@ -20,7 +20,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
     box-sizing: border-box;
 }
 
-body {
+.customgallery-body {
     font-family: "Open Sans", Arial, sans-serif;
     min-height: 100vh;
     background-color: #fafafa;
@@ -28,17 +28,17 @@ body {
     padding-bottom: 3rem;
 }
 
-img {
+.customgallery-image {
     display: block;
 }
 
-.container {
+.customgallery-container {
     max-width: 93.5rem;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.btn {
+.customgallery-btn {
     display: inline-block;
     font: inherit;
     background: none;
@@ -48,11 +48,11 @@ img {
     cursor: pointer;
 }
 
-.btn:focus {
+.customgallery-btn:focus {
     outline: 0.5rem auto #4d90fe;
 }
 
-.visually-hidden {
+.customgallery-visually-hidden {
     position: absolute !important;
     height: 1px;
     width: 1px;
@@ -81,7 +81,7 @@ img {
     margin-right: 3rem;
 }
 
-.profile-image img {
+.profile-image .customgallery-image {
     border-radius: 50%;
 }
 
@@ -147,14 +147,14 @@ img {
 
 /* Gallery Section */
 
-.gallery {
+.customgallery-gallery {
     display: flex;
     flex-wrap: wrap;
     margin: -1rem -1rem;
     padding-bottom: 3rem;
 }
 
-.gallery-item {
+.customgallery-gallery-item {
     position: relative;
     flex: 1 0 22rem;
     margin: 1rem;
@@ -162,8 +162,8 @@ img {
     cursor: pointer;
 }
 
-.gallery-item:hover .gallery-item-info,
-.gallery-item:focus .gallery-item-info {
+.customgallery-gallery-item:hover .gallery-item-info,
+.customgallery-gallery-item:focus .gallery-item-info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,21 +174,21 @@ img {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.gallery-item-info {
+.customgallery-gallery-item-info {
     display: none;
 }
 
-.gallery-item-info li {
+.customgallery-gallery-item-info li {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
 }
 
-.gallery-item-likes {
+.customgallery-gallery-item-likes {
     margin-right: 2.2rem;
 }
 
-.gallery-item-type {
+.customgallery-gallery-item-type {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -196,12 +196,12 @@ img {
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
-.fa-clone,
+.customgallery-fa-clone,
 .fa-comment {
     transform: rotateY(180deg);
 }
 
-.gallery-image {
+.customgallery-gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -209,7 +209,7 @@ img {
 
 /* Loader */
 
-.loader {
+.customgallery-loader {
     width: 5rem;
     height: 5rem;
     border: 0.6rem solid #999;
@@ -240,7 +240,7 @@ img {
         width: auto;
     }
 
-    .profile-image img {
+    .profile-image .customgallery-image {
         width: 7.7rem;
     }
 
@@ -330,7 +330,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         grid-row: 1 / -1;
     }
 
-    .gallery {
+    .customgallery-gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
         grid-gap: 2rem;
@@ -340,8 +340,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
     .profile-user-settings,
     .profile-stats,
     .profile-bio,
-    .gallery-item,
-    .gallery {
+    .customgallery-gallery-item,
+    .customgallery-gallery {
         width: auto;
         margin: 0;
     }
