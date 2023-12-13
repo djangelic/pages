@@ -10,6 +10,10 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 
 /* Base Styles */
 
+:root {
+    font-size: 10px;
+}
+
 *,
 *::before,
 *::after {
@@ -176,14 +180,16 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.customgallery-gallery-item-info {
+.gallery-item-info {
     display: none;
+    /* Additional styles */
 }
 
-.customgallery-gallery-item-info li {
+.gallery-item-info li {
     display: inline-block;
     font-size: 1.7rem;
     font-weight: 600;
+    /* Additional styles */
 }
 
 .customgallery-gallery-item-likes {
